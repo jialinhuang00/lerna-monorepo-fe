@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { Button } from "../../shared-components/stories/Button";
+import { Btn } from "./components/Btn";
 
 export default function Home() {
   return (
@@ -109,6 +111,8 @@ export default function Home() {
     //     </a>
     //   </div>
     // </main>
-    <div></div>
+    <div>
+      <Btn />
+    </div>
   );
 }
