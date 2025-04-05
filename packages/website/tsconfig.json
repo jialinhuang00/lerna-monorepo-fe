@@ -18,8 +18,9 @@
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./src/*"]
+   "paths": {
+      "@/*": ["./src/*"],
+      "@shared/pure-css-components/*": ["../shared-components/pure-css-components/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
