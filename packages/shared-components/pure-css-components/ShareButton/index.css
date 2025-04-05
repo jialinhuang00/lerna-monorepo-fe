@@ -1,0 +1,49 @@
+.share-button-small {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.share-button-medium {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.share-button-large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+.share-button-primary {
+  background-color: #22c55e;
+  color: white;
+}
+
+.share-button-primary:hover {
+  background-color: #16a34a;
+}
+
+.share-button-secondary {
+  background-color: #ef4444;
+  color: white;
+}
+
+.share-button-secondary:hover {
+  background-color: #dc2626;
+}
+
+.share-button-none {
+  background-color: #fafafa;
+  color: black;
+}
+
+.share-button-none:hover {
+  background-color: #f3f4f6;
+}
+
+.share-button-base {
+  border-radius: 0.25rem;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  cursor: pointer;
+} 
+
