@@ -1,9 +1,7 @@
 import React from 'react';
-import './button.css';
 
 export interface ButtonProps {
   primary?: boolean;
-  backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';
   label: string;
   onClick?: () => void;
@@ -11,17 +9,24 @@ export interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({
   primary = false,
-  size = 'medium',
-  backgroundColor,
+  size = 'medium', 
   label,
   ...props
 }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const sizeStyle = size === 'small' 
+    ? 'p-2 text-sm'
+    : size === 'large'
+    ? 'p-4 text-lg'
+    : 'p-8 text-base';
+
+  const variantStyle = primary
+    ? 'bg-red-500 text-white hover:bg-red-600'
+    : 'bg-green-200 text-gray-800 hover:bg-gray-300';
+
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={{ backgroundColor }}
+      className={`cursor-pointer font-semibold rounded transition-colors duration-200 ${sizeStyle} ${variantStyle}`}
       {...props}
     >
       {label}
