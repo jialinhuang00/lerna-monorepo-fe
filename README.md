@@ -1,6 +1,6 @@
 # Lerna Monorepo Frontend Project
 
-## Project Overview
+## Some Points
 
 1. This is a monorepo project using Lerna.
 
@@ -12,9 +12,23 @@
      - `pure-css-components`: Has basic CSS and Tailwind CSS
      - `storybook-components`: Uses Storybook to display components
 
+3. **All packages are defined in the root `package.json` and the scripts specify the workspace, so you don't need to jump around in the terminal with `cd` commands - no more running back and forth between projects!**
+
 The main goal is to create a boilerplate with consistent component styling that works across different domains (websites). I set up two example websites to test this approach, while also experimenting with [Storybook and Tailwind integration](#storybook-and-tailwind-integration) (which took a lot of time to figure out).
 
-## Current Issues 🚨🚨
+
+## Local Development
+
+To get started with local development:
+
+1. clone
+2. cd
+3. `nvm use` (if you're not in node 22)
+4. `npm i`
+5. `npm run dev`
+
+
+## Issues 🚨🚨
 
 1. Tailwind CSS works fine in Storybook during development, but when I use `storybook-components` in the website projects, the styles don't show up.
 2. The `pure-css-components` library with basic CSS works when imported into websites. I also tried putting Tailwind CSS directly inside and exporting it to the websites, but that doesn't work either.
@@ -43,6 +57,7 @@ You need both set up right for everything to work.
 - Common: tailwindcss
 - Next.js: postcss, @tailwindcss/postcss
 - Vite: @tailwindcss/vite
+
 
 ## Storybook and Tailwind Integration
 
