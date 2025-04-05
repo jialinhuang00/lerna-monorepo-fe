@@ -5,10 +5,10 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace=packages/website",
-    "build": "npm run build --workspace=packages/website",
-    "start": "npm run start --workspace=packages/website",
-    "lint": "npm run lint --workspace=packages/website",
+    "dev": "concurrently \"npm run dev --workspace=packages/website\" \"npm run dev --workspace=packages/spa-react-website\"",
+    "build": "concurrently \"npm run build --workspace=packages/website\" \"npm run build --workspace=packages/spa-react-website\"",
+    "start": "concurrently \"npm run start --workspace=packages/website\" \"npm run start --workspace=packages/spa-react-website\"",
+    "lint": "concurrently \"npm run lint --workspace=packages/website\" \"npm run lint --workspace=packages/spa-react-website\"",
     "storybook": "npm run storybook --workspace=packages/shared-components",
     "build-storybook": "npm run build-storybook --workspace=packages/shared-components"
   },
@@ -32,12 +32,20 @@
     "@types/node": "20.11.19",
     "@types/react": "19.0.0",
     "@types/react-dom": "19.0.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "10.4.17",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
     "lerna": "^8.1.2",
     "postcss": "8.4.35",
     "react-docgen-typescript": "^2.2.2",
     "storybook": "^8.6.12",
     "tailwindcss": "3.4.1",
-    "typescript": "5.3.3"
+    "typescript": "5.3.3",
+    "vite": "^5.1.0"
   }
 }
