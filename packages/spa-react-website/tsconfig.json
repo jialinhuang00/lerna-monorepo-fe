@@ -24,7 +24,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@shared/pure-css-components/*": ["../shared-components/pure-css-components/*"]
+      "@shared/pure-css-components/*": ["../pure-css-components/*"],
+      "@shared/storybook-components/*": ["../storybook-components/src/components/*"]
     }
   },
   "include": ["src"],

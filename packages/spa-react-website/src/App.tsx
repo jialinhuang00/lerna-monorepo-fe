@@ -1,4 +1,5 @@
 import ShareButton from '@shared/pure-css-components/ShareButton'
+import StoryBookButton from '@shared/storybook-components/Button'
 
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
       <ShareButton size="large" variant={'primary'} label="native-css" />
       <ShareButton size="large" variant={'secondary'} label="native-css" />
       <ShareButton size="large" variant={'none'} label="native-css" />
+      <StoryBookButton size="large" primary label="storybook-css" />
+      <StoryBookButton size="medium" label="storybook-css" />
+      <StoryBookButton size="small" label="storybook-css" />
       <button className='font-semibold rounded transition-colors cursor-pointer duration-200 px-6 py-3 text-lg bg-gray-200 text-[red] hover:bg-sky-700 hover:text-white'>inline tailwind css</button>
 
     </div>

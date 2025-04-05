@@ -9,8 +9,8 @@
     "build": "concurrently \"npm run build --workspace=packages/website\" \"npm run build --workspace=packages/spa-react-website\"",
     "start": "concurrently \"npm run start --workspace=packages/website\" \"npm run start --workspace=packages/spa-react-website\"",
     "lint": "concurrently \"npm run lint --workspace=packages/website\" \"npm run lint --workspace=packages/spa-react-website\"",
-    "storybook": "npm run storybook --workspace=packages/shared-components",
-    "build-storybook": "npm run build-storybook --workspace=packages/shared-components"
+    "storybook": "npm run storybook --workspace=packages/storybook-components",
+    "build-storybook": "npm run build-storybook --workspace=packages/storybook-components"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.3",

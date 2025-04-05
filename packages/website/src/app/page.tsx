@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ShareButton from '@shared/pure-css-components/ShareButton'
+import StoryBookButton from '@shared/storybook-components/Button'
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       <ShareButton size="large" variant={'primary'} label="native-css" />
       <ShareButton size="large" variant={'secondary'} label="native-css" />
       <ShareButton size="large" variant={'none'} label="native-css" />
+      <StoryBookButton size="large" primary label="storybook-css" />
+      <StoryBookButton size="medium"  label="storybook-css" />
+      <StoryBookButton size="small" label="storybook-css" />
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"

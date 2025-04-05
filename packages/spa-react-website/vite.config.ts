@@ -12,7 +12,8 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
       // if comment this line, it'll cause `Failed to resolve import "@shared/pure-css-components/ShareButton" from "src/App.tsx". Does the file exist?`
-      '@shared/pure-css-components': path.resolve(__dirname, '../shared-components/pure-css-components'),
+      '@shared/pure-css-components': path.resolve(__dirname, '../pure-css-components'),
+      '@shared/storybook-components': path.resolve(__dirname, '../storybook-components/src/components')
     },
   },
 })
